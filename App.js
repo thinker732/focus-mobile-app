@@ -4,6 +4,8 @@ import {Focus} from './src/features/focus/focus'
 import {Timer} from './src/features/timer/timer'
 import Constants from 'expo-constants';
 
+
+
 export default function App() {
 
 
@@ -33,6 +35,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor:'#EEB76B',
-    paddingTop:Platform.Os==='ios'?40:35,
+    paddingTop:Platform.Os==='ios'?80:75,
   },
 });
