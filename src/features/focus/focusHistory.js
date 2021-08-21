@@ -1,7 +1,7 @@
 import React from 'react'
 import {View ,StyleSheet , FlatList ,Text, SafeAreaWiew} from 'react-native'
 
-
+import {RoundedButton} from '../../components/roundedButton'
 
 
 const HistoryItem=({item ,index})=>{
@@ -34,9 +34,11 @@ export const FocusHistory=({focusList,onClear })=>{
                 />
               )
             }
+            <View style={styles.clearContainer}>
+            <RoundedButton title='clear' size={75} onPress={()=>onClear()}/>
         </View>
-        <View style={styles.clearContainer}>
         </View>
+       
     </>
   )
 }
@@ -49,5 +51,9 @@ const styles=StyleSheet.create({
   title:{
     color:'white',
     fontSize:20
+  },
+  clearContainer:{
+      alignItems:'center',
+      padding:10
   }
 })

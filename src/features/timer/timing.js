@@ -10,9 +10,9 @@ export const Timing=({
   return(
     <>
       <View style={styles.timingButtton}>
-      <RoundedButton size={75} tittle='10' onPress={()=>onChangeTime(10)}/> 
-      <RoundedButton size={75} tittle='15' onPress={()=>onChangeTime(15)}/> 
-      <RoundedButton size={75} tittle='20' onPress={()=>onChangeTime(20)}/> 
+      <RoundedButton size={75} title='10' onPress={()=>onChangeTime(10)}/> 
+      <RoundedButton size={75} title='15' onPress={()=>onChangeTime(15)}/> 
+      <RoundedButton size={75} title='20' onPress={()=>onChangeTime(20)}/> 
       </View>
     </>
   )

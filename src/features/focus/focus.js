@@ -9,8 +9,8 @@ export const Focus=({ addSubject })=>{
 const [tmpSubject,setSubject]=useState(null)
 return (
 <View style={styles.container}>
-    <View style={styles.tittleContainer}>
-        <Text style={styles.tittle}>
+    <View style={styles.titleContainer}>
+        <Text style={styles.title}>
            Sur quoi dois tu te concentrer?
         </Text>
         <View style={styles.inputContainer}>
@@ -30,7 +30,7 @@ return (
           
         }
         
-        size={50} tittle="+" 
+        size={50} title="+" 
       /> 
         </View>
     </View>
@@ -43,13 +43,13 @@ const styles = StyleSheet.create({
     flex: 1,
     //padding: 50,
   },
-  tittleContainer:{
+  titleContainer:{
     flex:0.7,
     padding:20,
     justifyContent: "center",
     textAlign:"center",
   },
-  tittle:{
+  title:{
       color:"white",
       fontWeight:"bold",
       fontSize:26,

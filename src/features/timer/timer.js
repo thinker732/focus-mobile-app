@@ -62,13 +62,13 @@ const vibrate=()=>{
         </View>
       <View style={styles.buttonWrapper}>
       {!isStarted?
-      <RoundedButton tittle="start" 
+      <RoundedButton title="start" 
       
         onPress={()=>{
             setIsStarted(true)
         }}
       />:
-      <RoundedButton tittle="pause" 
+      <RoundedButton title="pause" 
       
         onPress={()=>{
             setIsStarted(false)
@@ -79,7 +79,7 @@ const vibrate=()=>{
      
       </View>
        <View style={styles.clear}>
-          <RoundedButton tittle="-" 
+          <RoundedButton title="-" 
               size={50}
         onPress={()=>{
             clearSubject()

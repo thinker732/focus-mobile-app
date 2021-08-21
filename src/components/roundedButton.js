@@ -15,7 +15,7 @@ return(
     onPress={props.onPress}
     >
    <Text 
-style={[styles(size).text]}>{props.tittle}
+style={[styles(size).text]}>{props.title}
     </Text>
     </TouchableOpacity>
     )
