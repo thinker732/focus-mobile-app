@@ -17,7 +17,15 @@ const [focusSubject,setFocusSubject]=useState("coding")
   return (<View style={styles.container}>
       {focusSubject?
       (
-        <Timer focusSubject={focusSubject}/>
+        <Timer focusSubject={focusSubject} 
+        returnFocus={
+          ()=>setFocusSubject(null)
+          } 
+
+          clearSubject={
+            ()=>setFocusSubject(null)
+          }
+        />
         )
         :
         (

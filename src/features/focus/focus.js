@@ -6,7 +6,7 @@ import { RoundedButton } from './../../components/roundedButton'
 
 
 export const Focus=({ addSubject })=>{
-const [tmpItem,setTmpItem]=useState(null)
+const [tmpSubject,setSubject]=useState(null)
 return (
 <View style={styles.container}>
     <View style={styles.tittleContainer}>
@@ -19,13 +19,13 @@ return (
 
        onSubmitEditing={
          ({nativeEvent})=>{
-          setTmpItem(nativeEvent.text)
+          setSubject(nativeEvent.text)
          }}
         />
       <RoundedButton
         
         onPress={()=>{
-          addSubject(tmpItem)
+          addSubject(tmpSubject)
         }
           
         }

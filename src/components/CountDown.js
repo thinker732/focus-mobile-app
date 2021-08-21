@@ -9,9 +9,10 @@ const minutesToMillis=
 const formatTime=(time)=>
 time<10?`0${time}`:time
 export const Countdown=({
-    minutes=20,
+    minutes,
     isPaused=true,
-    onProgress
+    onProgress,
+    onEnd
 })=>{
 
   const interval=React.useRef(null)
@@ -20,6 +21,8 @@ export const Countdown=({
 const countDown=()=>{
   setMillis((time)=>{
     if(time===0){
+      clearInterval(interval.current)
+      onEnd()
       return time
     }
 
